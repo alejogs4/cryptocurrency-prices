@@ -1,0 +1,30 @@
+.container {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.form {
+  width: 40%;
+  padding: 1em;
+}
+
+[type="text"],
+[type="submit"] {
+  display: block;
+  margin-bottom: 1em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3em;
+}
+
+[type="submit"] {
+  background-color: var(--secondary-color);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+[type="submit"]:hover { background-color: var(--main-color-light); }
+[type="text"] { text-align: center; }

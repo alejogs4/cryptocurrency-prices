@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #21482F;
+  --secondary-color: #348367;
+  --main-color-light: #7AA85C;
+  --accent-color: #F5E84F;
+  --borders: #56515D;
+  --background: #FAFDFF;
+}
+
+.lato { font-family: 'Lato', sans-serif; }
+.open-sans { font-family: 'Open Sans', sans-serif; }
+
+.body {
+  background-color: var(--background);
+}

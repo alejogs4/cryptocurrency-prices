@@ -1,0 +1,13 @@
+
+.header {
+  background: var(--main-color);
+  height: 10vh;
+  box-shadow: 0 1px 10px 1px black;
+  margin-bottom: 2em;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  line-height: 10vh;
+}
