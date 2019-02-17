@@ -1,6 +1,4 @@
 <div class="container">
-  <form class="form">
-    <input type="text" placeholder="Cryptocurency"/>
-    <input type="submit" class="open-sans" value="Search"/>
-  </form>
+  <input type="text" placeholder="Cryptocurency filter" (keyup)="handleInput($event)" />
+  <app-currencies-list [currencies]="currencies" [query]="query"></app-currencies-list>
 </div>

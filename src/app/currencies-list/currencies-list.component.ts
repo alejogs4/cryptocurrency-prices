@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Data } from '../services/models/Crytocurrency';
 
 @Component({
   selector: 'app-currencies-list',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./currencies-list.component.css']
 })
 export class CurrenciesListComponent implements OnInit {
+  @Input() currencies : Data[]
+  @Input() query : string
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

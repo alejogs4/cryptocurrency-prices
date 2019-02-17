@@ -1,3 +1,14 @@
-<p>
-  currencies-list works!
-</p>
+<table>
+  <thead class="open-sans">
+    <th>Full name</th>
+    <th>Total Coin Supply</th>
+    <th>Algorithm</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let currency of currencies | includes : query" class="lato">
+      <td>{{ currency.FullName }}</td>
+      <td>{{ currency.TotalCoinSupply }}</td>
+      <td>{{ currency.Algorithm }}</td>
+    </tr>
+  </tbody>
+</table>
