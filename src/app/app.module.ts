@@ -1,13 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CurrenciesPanelComponent } from './currencies-panel/currencies-panel.component';
-import includes from './currencies-panel/includes.pipe'
 import { CurrenciesListComponent } from './currencies-list/currencies-list.component';
-import { HttpClientModule } from '@angular/common/http';
+import { Includes } from './currencies-panel/includes.pipe';
 
 @NgModule({
   declarations: [
@@ -15,14 +14,12 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     CurrenciesPanelComponent,
     CurrenciesListComponent,
-    includes
+    Includes
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

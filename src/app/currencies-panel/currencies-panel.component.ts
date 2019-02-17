@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CryptocurrenciesService } from '../services/cryptocurrencies.service'
 import Cryptocurrency, { Data } from '../services/models/Crytocurrency'
-import includes from './includes.pipe'
+import {Includes} from './includes.pipe'
 
 @Component({
   selector: 'app-currencies-panel',
