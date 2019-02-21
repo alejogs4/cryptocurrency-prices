@@ -1,14 +1,16 @@
 <table>
   <thead class="open-sans">
     <th>Full name</th>
-    <th>Total Coin Supply</th>
+    <th>Max Coin Supply</th>
     <th>Algorithm</th>
+    <th>Details</th>
   </thead>
   <tbody>
     <tr *ngFor="let currency of currencies | includes : query" class="lato">
       <td>{{ currency.FullName }}</td>
-      <td>{{ currency.TotalCoinSupply }}</td>
+      <td>$ {{ currency.TotalCoinSupply }}</td>
       <td>{{ currency.Algorithm }}</td>
+      <td><a routerLink="/detail/{{currency.Name}}">View Details</a></td>
     </tr>
   </tbody>
 </table>
