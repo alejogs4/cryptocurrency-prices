@@ -1,0 +1,33 @@
+<div *ngIf="cryptoCurrency">
+
+  <img src="https://www.cryptocompare.com{{cryptoCurrency.ImageUrl}}" alt="image">
+  <hr />
+  <br />
+  <h2>DETAILS</h2>
+  <br />
+  <p><strong>COIN NAME:</strong> {{cryptoCurrency.FullName}}</p>
+  <br />
+  <p><strong>ABBREVIATION NAME:</strong> {{cryptoCurrency.Name}}</p>
+  <br />
+  <p><strong>ALGORITHM TYPE:</strong> {{cryptoCurrency.Algorithm}}</p>
+</div>
+<br />
+<hr />
+<div *ngIf="cryptoCurrencyPrice">
+  <h2>PRICES</h2>
+  <br />
+  <p><strong>DOLLAR PRICE <br/>$ </strong>{{cryptoCurrencyPrice.USD}} </p>
+  <br />
+  <p><strong>EURO PRICE <br/> € </strong>{{cryptoCurrencyPrice.EUR}}</p>
+  <br />
+  <p><strong>YEN PRICE <br/> ¥ </strong>{{cryptoCurrencyPrice.JPY}}</p>
+</div>
+<br />
+<hr />
+<div *ngIf="cryptoCurrencyOHLCV">
+  <h2>HISTORICAL DAILY OHLCV</h2>
+  <br />
+  <p></p>
+  <p><strong>DATE</strong></p>
+</div>
+

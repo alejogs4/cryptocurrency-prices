@@ -22,7 +22,8 @@ export class CurrenciesPanelComponent implements OnInit {
   getCryptocurrencyData(): void {
     this.cryptoService.getCryptoCurrencies()
       .subscribe((response: Cryptocurrency) => {
-        this.currencies = Object.values(response.Data).slice(0, 20)
+        this.currencies = Object.values(response.Data).slice(0, 100)
+        console.log(this.currencies)
       },
         (error) => {
           console.log(error)

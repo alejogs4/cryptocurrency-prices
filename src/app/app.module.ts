@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { CurrenciesPanelComponent } from './currencies-panel/currencies-panel.component';
 import { CurrenciesListComponent } from './currencies-list/currencies-list.component';
 import { Includes } from './currencies-panel/includes.pipe';
+import { CurrenciesDetailsComponent } from './currencies-details/currencies-details.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { Includes } from './currencies-panel/includes.pipe';
     HeaderComponent,
     CurrenciesPanelComponent,
     CurrenciesListComponent,
-    Includes
+    Includes,
+    CurrenciesDetailsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    AppRoutingModule,
   ],
   bootstrap: [AppComponent]
 })
