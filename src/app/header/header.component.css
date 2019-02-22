@@ -4,10 +4,17 @@
   height: 10vh;
   box-shadow: 0 1px 10px 1px black;
   margin-bottom: 2em;
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/back_pic/04/01/21/3958008dcee693b.jpg');
+  position: sticky;
+  text-align: center;
+  padding: 5px;
+  top: 0px;
 }
 
 .title {
   text-align: center;
-  color: #fff;
+  font-size: 50px;
+  color: white;
   line-height: 10vh;
+  text-shadow: 2px 0 5px black, 2px 0 5px black, 2px 0 5px black, 2px 0 5px black;
 }
