@@ -1,9 +1,10 @@
-<div *ngIf="cryptoCurrency">
+<body>
+<div *ngIf="cryptoCurrency" class="lato">
 
   <img src="https://www.cryptocompare.com{{cryptoCurrency.ImageUrl}}" alt="image">
   <hr />
   <br />
-  <h2>DETAILS</h2>
+  <h2 class="open-sans">DETAILS</h2>
   <br />
   <p><strong>COIN NAME:</strong> {{cryptoCurrency.FullName}}</p>
   <br />
@@ -13,8 +14,8 @@
 </div>
 <br />
 <hr />
-<div *ngIf="cryptoCurrencyPrice">
-  <h2>PRICES</h2>
+<div *ngIf="cryptoCurrencyPrice" class="lato">
+  <h2 class="open-sans">PRICES</h2>
   <br />
   <p><strong>DOLLAR PRICE <br/>$ </strong>{{cryptoCurrencyPrice.USD}} </p>
   <br />
@@ -24,10 +25,10 @@
 </div>
 <br />
 <hr />
-<div *ngIf="cryptoCurrencyOHLCV">
-  <h2>HISTORICAL DAILY OHLCV</h2>
+<div *ngIf="cryptoCurrencyOHLCV" class="lato">
+  <h2 class="open-sans">HISTORICAL DAILY OHLCV</h2>
   <br />
   <p></p>
   <p><strong>DATE</strong></p>
 </div>
-
+</body>
