@@ -1,5 +1,5 @@
 body {
-    width: 50%;
+    width: 30%;
     margin: 0 auto;
     box-shadow: 0 1px 10px 1px black;
     border-collapse: collapse;
@@ -9,7 +9,7 @@ body {
 }
 
 h2 {
-    width: 50%;
+    width: 100%;
     margin: auto;
     background-color: #348367;
     background-image: url('https://png.pngtree.com/thumb_back/fw800/back_pic/04/01/21/3958008dcee693b.jpg');
