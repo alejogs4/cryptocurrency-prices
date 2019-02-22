@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import { ActivatedRoute } from '@angular/router';
-import Cryptocurrency, { Data } from '../services/models/Crytocurrency'
+import Cryptocurrency from '../services/models/Crytocurrency'
 import { CryptocurrenciesService } from '../services/cryptocurrencies.service'
 
 
@@ -31,17 +31,16 @@ export class CurrenciesDetailsComponent implements OnInit {
     this.cryptoCurrenciesService.getCryptoCurrency(name)
       .subscribe(cryptoCurrencies => {
         this.cryptoCurrency = cryptoCurrencies.Data[0].CoinInfo
-        console.log(this.cryptoCurrency)
       })
+
     this.cryptoCurrenciesService.getCryptoCurrencyPrice(name)
       .subscribe(cryptoPrice => {
         this.cryptoCurrencyPrice = cryptoPrice
-        console.log(this.cryptoCurrencyPrice)
       })
+
     this.cryptoCurrenciesService.getCryptoCurrencyOHLCV(name)
       .subscribe(cryptoOHLCV => {
         this.cryptoCurrencyOHLCV = cryptoOHLCV.Data
-        console.log(this.cryptoCurrencyOHLCV)
       })
   }
 
